@@ -1,0 +1,41 @@
+table>tr>td>input {
+    font-family: monospace;
+}
+td.unprintable {
+    background: #ccc;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+* {
+    text-align: center;
+}
+
+.autogen[inputSource="EMPTY"] {
+    background: #d77;
+}
+
+.autogen[inputSource="TYPED"] {
+    background: #7d7;
+}
+
+.autogen[inputSource="COMPUTED"] {
+    background: #77d;
+}
+
+.autogen[inputSource="LOCKED"] {
+    background: black;
+    color: white;
+}
+.singleInput {
+    width: 2em;
+    height: 1.5em;
+    font-size: 1.5em;
+}
+.autogen:focus {
+    background: #ccc;
+}
+.hscroll {
+    overflow-x: scroll;
+}

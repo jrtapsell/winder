@@ -1,0 +1,45 @@
+<!--
+)\x04MG/\x1c\rE8\x16\x14\x05\x01\x7f\x0b\x03\x01S*\x1a\x1f:K\x01\tW\x06\x00\x06\x1bQ.\tA\x0f\x1a\x10H\x11:\nU\x1f\r0\x11\x1c\x04\x1d\nO\x19:\x05UO?:O\x19\x11\x0f\x05\x04\x04\x03[\x00\x00\x002D\x00\x1bE+\x0bO\x11\x1b\x0bO\x000\x1bN\x00\x11\x7f\x1b\x1c\x15]\x0e\x05\r\x0bWT)\x0b;D\x1d\x0eE2\x05\x1d\x06\x1b\x0b\x0bT+\x03\x0b\x02W;\x00\x03\x1e]\x07\x0b\x00\x0e\x15ZH$1\x00U\x1c\r:\nO\x11\x1b\x0b\x16T(\x0e\x1c\nW*\x1fXP\t\x0e\t\x18G\x0c\x11\x1a\x00\x7f\x11\x05GE\x1e\n\x0bE\x04\x06\n\x1a\x7f\x1f\x06\n\x0e\x7f\x18\x11\x02\x18F\x08\x0e\x10\x15XH\x117\x01\x0cK\x12:\x16\nE\x17\x01\x18\x1asK/\x01\x13\x7f\x18\x1c\x15\x13F\x18\t\x02\x02T\x1f\x00-\x01U\x04\x0b3\x1dO\r\x12\x02\tY(\n\x17O\x02/CT$\x15\x03\x15A\x10\x1e\x06\rE1\x01\x1c\x1f\r:\x16O\x10\x03N\x01\x1b-K\n\x00\x001AT?6
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link rel="stylesheet" href="static/css/index.css">
+    </head>
+    <body>
+        <div class="mdl-grid">
+            <form onsubmit="return false" class="mdl-grid mdl-cell--12-col">
+                <div class="mdl-cell mdl-cell--10-col mdl-textfield mdl-js-textfield">
+                    <input
+                            class="mdl-textfield__input"
+                            id="pythonicInput">
+                    <label class="mdl-textfield__label" for="pythonicInput">Input</label>
+                </div>
+                <button
+                        class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-cell mdl-cell--2-col"
+                        id="updateButton">Process input</button>
+            </form>
+
+        <div class="mdl-cell mdl-cell--12-col mdl-grid">
+            <input class="autogen mdl-cell mdl-cell--3-col" inputSource="EMPTY" value="Empty">
+            <input class="autogen mdl-cell mdl-cell--3-col" inputSource="TYPED" value="Manually entered">
+            <input class="autogen mdl-cell mdl-cell--3-col" inputSource="COMPUTED" value="Computed">
+            <input class="autogen mdl-cell mdl-cell--3-col" inputSource="LOCKED" value="Read only">
+        </div>
+            <div class="mdl-cell mdl-cell--12-col hscroll">
+        <table id="out" style="width: 100%;">
+            <tr>
+                <td><h2>Input to start cracking</h2></td>
+            </tr>
+        </table>
+            </div>
+        </div>
+    </body>
+    <script src="static/js/kotlin/kotlin.js"></script>
+    <script src="static/js/kotlin/webXor.js"></script>
+</html>
